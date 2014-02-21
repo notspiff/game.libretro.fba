@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="gameclient.fba"
+		name="Final Burn Alpha"
+		version="0.2.98"
+		provider-name="Libretro">
+	<requires>
+		<import addon="xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux="fb_alpha_libretro.so"
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+        <platforms></platforms>
+		<extensions>iso|zip</extensions>
+		<allowvfs>false</allowvfs>
+		<blockextract>true</blockextract>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Final Burn Alpha v0.2.97.28</summary>
+		<description>Final Burn Alpha is an emulator of arcade games. Currently, FB Alpha supports games on Capcom CPS-1 and CPS-2 hardware, SNK Neo-Geo hardware, Toaplan hardware, Cave hardware, Sega System 16, and various games on miscellaneous hardware. FB Alpha is based on the original FinalBurn.
+
+Supported files: .iso, .zip
+
+Icon credit: TRIPLEKILLZ (triplekillz.deviantart.com)
+
+Source: https://github.com/libretro/fba-libretro</description>
+		<disclaimer>The authors of FB Alpha don't guarantee its fitness for any purpose, implied or otherwise, and do not accept responsibility for any damages whatsoever that might occur when using FB Alpha. All games emulated by FB Alpha, including any images and sounds therein, are copyrighted by their respective copyright holders.</disclaimer>
+		<platform>linux</platform>
+		<nofanart>true</nofanart>
+		
+	</extension>
+</addon>
