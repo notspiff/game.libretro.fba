@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.fba"
 		name="Final Burn Alpha"
-		version="0.2.98"
+		version="0.2.97"
 		provider-name="Libretro">
 	<requires>
 	    <import addon="game.libretro" version="1.0.0"/>
@@ -14,8 +14,8 @@
                    library_wingl="game.libretro.fba.dll">
         <platforms></platforms>
 		<extensions>iso|zip</extensions>
-		<allowvfs>false</allowvfs>
-		<blockextract>true</blockextract>
+		<supports_vfs>false</supports_vfs>
+		<supports_no_game>false</supports_no_game>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Final Burn Alpha v0.2.97.28</summary>
@@ -25,8 +25,9 @@ Supported files: .iso, .zip
 
 Icon credit: TRIPLEKILLZ (triplekillz.deviantart.com)
 
-Source: https://github.com/libretro/fba-libretro</description>
+License: Non-commercial</description>
 		<disclaimer>The authors of FB Alpha don't guarantee its fitness for any purpose, implied or otherwise, and do not accept responsibility for any damages whatsoever that might occur when using FB Alpha. All games emulated by FB Alpha, including any images and sounds therein, are copyrighted by their respective copyright holders.</disclaimer>
 		<platform>all</platform>
+		<nofanart>true</nofanart>
 	</extension>
 </addon>
