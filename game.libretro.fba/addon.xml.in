@@ -7,11 +7,7 @@
 	    <import addon="game.libretro" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-                   library_android="libgame.libretro.fba.so"
-                   library_linux="game.libretro.fba.so"
-                   library_osx="game.libretro.fba.dylib"
-                   library_windx="game.libretro.fba.dll"
-                   library_wingl="game.libretro.fba.dll">
+                   library_@PLATFORM@="@LIBRARY_FILENAME@">
         <platforms></platforms>
 		<extensions>iso|zip</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -27,7 +23,7 @@ Icon credit: TRIPLEKILLZ (triplekillz.deviantart.com)
 
 License: Non-commercial</description>
 		<disclaimer>The authors of FB Alpha don't guarantee its fitness for any purpose, implied or otherwise, and do not accept responsibility for any damages whatsoever that might occur when using FB Alpha. All games emulated by FB Alpha, including any images and sounds therein, are copyrighted by their respective copyright holders.</disclaimer>
-		<platform>all</platform>
+		<platform>@PLATFORM@</platform>
 		<nofanart>true</nofanart>
 	</extension>
 </addon>
