@@ -1,10 +1,7 @@
+cmake_minimum_required(VERSION 3.1)
 project(game.libretro.fba)
 
-cmake_minimum_required(VERSION 2.6)
-
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
-
-enable_language(CXX)
 
 find_package(Kodi REQUIRED)
 
@@ -39,9 +36,7 @@ externalproject_add(fba
                     BUILD_IN_SOURCE 1)
 
 set(FBA_CUSTOM_BINARY ${PROJECT_BINARY_DIR}/fba/src/fba/svn-current/trunk/fb_alpha_libretro${CMAKE_SHARED_LIBRARY_SUFFIX}
-                      game.libretro.fba${CMAKE_SHARED_LIBRARY_SUFFIX} fba)
+                      ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
 
-build_addon(game.libretro.fba FBA DEPLIBS)
-add_dependencies(game.libretro.fba fba)
-
-include(CPack)
+build_addon(${PROJECT_NAME} FBA DEPLIBS)
+add_dependencies(${PROJECT_NAME} fba)
